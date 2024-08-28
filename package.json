@@ -1,0 +1,35 @@
+{
+  "name": "MERN-Monorepo-Boilerplate",
+  "version": "1.0.0",
+  "main": "index.js",
+  "private": true,
+  "license": "MIT",
+  "scripts": {
+    "dev": "concurrently \"yarn workspace client dev\" \"yarn workspace server dev\"",
+    "client-server": "concurrently \"yarn workspace client install\" \"yarn workspace server install\""
+  },
+  "workspaces": [
+    "server",
+    "client"
+  ],
+  "devDependencies": {
+    "concurrently": "^8.2.2"
+  },
+  "keywords": [
+    "philipthedeveloper"
+  ],
+  "author": {
+    "name": "Philip Owolabi",
+    "email": "philipowolabi79@gmail.com",
+    "url": "https://philipthedeveloper.netlify.app"
+  },
+  "homepage": "https://github.com/philipthedeveloper/mern-monorepo-boilerplate#readme",
+  "bugs": {
+    "url": "https://github.com/philipthedeveloper/mern-monorepo-boilerplate/issues",
+    "email": "philipowolabi79@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/philipthedeveloper/mern-monorepo-boilerplate.git"
+  }
+}
