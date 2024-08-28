@@ -53,6 +53,6 @@ const configs: Configs = {
 };
 
 export const envConfigs =
-  configs[(process.env.NODE_ENV || "dev") as keyof typeof configs];
+  configs[(process.env.NODE_ENV || "development") as keyof typeof configs];
 
 export default configs;
