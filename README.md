@@ -43,36 +43,19 @@ You should see the following structure:
 
 ## Setup
 
-### Step 1 (Optional): Install `concurrently` for Simultaneous Command Execution
+### Step 1: Install Dependencies
 
-If you wish to run the client and server simultaneously, install the project dependencies including `concurrently`:
+To install all dependencies for the root, client, and server, simply run:
 
 ```bash
 yarn install
 ```
 
-### Step 2: Install Dependencies
-
-Install the dependencies for the client and server.
-
-#### Option 1: Install Separately
-
-```bash
-yarn workspace client install
-yarn workspace server install
-```
-
-#### Option 2: Install Using `concurrently`
-
-```bash
-yarn client-server
-```
-
-> **Note:** The `yarn client-server` command requires `concurrently` to be installed as set up in Step 1.
+> **Note:** This command installs all the dependencies across the workspaces, including `client`, `server`, and the root directory. It also installs `concurrently` for running the client and server simultaneously.
 
 ## Start Project
 
-### Step 3: Start the Client and Server
+### Step 2: Start the Client and Server
 
 Start the client and server.
 
